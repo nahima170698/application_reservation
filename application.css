@@ -1,0 +1,166 @@
+img{
+    width: 80px;
+    height: 80px;
+}
+
+body{
+    display: flex;
+    text-align: center;
+}
+
+/*****************
+STYLE GENERAL
+******************/
+@import url(
+https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css);
+
+* {
+  font-family: arial, sans-serif;
+  color: dimgray;
+  font-family: 'Verdana', sans-serif;
+}
+
+body {
+  background: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  font-family:'Istok Web', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 1.1em 0;
+}
+
+h2, #reservation label[for="dateReservation"] {
+  font-weight: normal;
+  font-size: 1.4em;
+  margin: 1.8em 0 1em;
+}
+/******************************
+STYLES DU CONTENEUR PRINCIPAL
+******************************/
+main {
+  background: white;
+  width: 24.4%;
+  margin: 0 auto;
+  padding: 70px;
+  box-shadow: 0px 20px 40px rgba(206,206,206,0.3);
+  -webkit-box-shadow: 0px 20px 40px rgba(206,206,206,0.3);
+  -o-box-shadow: 0px 20px 40px rgba(206,206,206,0.3);
+  -moz-box-shadow: 0px 20px 40px rgba(206,206,206,0.3);
+  -ms-box-shadow: 0px 20px 40px rgba(206,206,206,0.3);
+  -khtml-box-shadow: 0px 20px 40px rgba(206,206,206,0.3);
+}
+
+main header img {
+  border: 7px solid #474850 !important;
+  width: 130px;
+  border-radius: 90%;
+  box-shadow: 0px 15px 30px rgba(206,206,206,0.8);
+  -webkit-box-shadow: 0px 15px 30px rgba(206,206,206,0.8);
+  -o-box-shadow: 0px 15px 30px rgba(206,206,206,0.8);
+  -moz-box-shadow: 0px 15px 30px rgba(206,206,206,0.8);
+  -ms-box-shadow: 0px 15px 30px rgba(206,206,206,0.8);
+  -khtml-box-shadow: 0px 15px 30px rgba(206,206,206,0.8);
+  border: none;
+}
+
+main header .fa {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  font-size: 2.2em;
+  text-align: right;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+main header .fa:first-child {
+  text-align: left;
+}
+/*********************
+STYLES DU FORMULAIRE
+*********************/
+#reservation input[type="submit"] {
+  background: #474850;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.2em;
+  padding: 30px;
+  margin-top: 3em;
+  box-shadow: 0px 15px 40px rgba(206,206,206,0.8);
+  -webkit-box-shadow: 0px 15px 40px rgba(206,206,206,0.8);
+  -o-box-shadow: 0px 15px 40px rgba(206,206,206,0.8);
+  -moz-box-shadow: 0px 15px 40px rgba(206,206,206,0.8);
+  -ms-box-shadow: 0px 15px 40px rgba(206,206,206,0.8);
+  -khtml-box-shadow: 0px 15px 40px rgba(206,206,206,0.8);
+  border: none;
+  width: 95%;
+}
+
+#reservation button, #reservation input {
+  background: none;
+  font-size: 1.4em;
+  color: gray;
+  font-family: 'Anton', sans-serif;
+  border: none;
+  vertical-align: middle;
+  text-align: center;
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -khtml-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+#reservation button:hover .fa, #reservation input:hover {
+  color: black;
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -khtml-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+#reservation input {
+  width: 95%;
+}
+
+#reservation label {
+  display:block;
+}
+
+#reservation #nbPersonnes {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  width: 50%;
+}
+
+.stop .fa {
+  color: lightgray;
+}
+/*****************
+MEDIA QUERIES
+******************/
+@media screen and (max-width: 1060px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  main {
+    padding: 20px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 236px) {
+  #reservation input {
+    width: 100%;
+  }
+}
